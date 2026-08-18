@@ -101,6 +101,9 @@ type Node struct {
 }
 
 func (n *Node) BrowseName() string {
+	if n == nil {
+		return ""
+	}
 	return n.Browse
 }
 
